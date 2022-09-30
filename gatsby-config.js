@@ -31,7 +31,7 @@ module.exports = {
             slug: `/loli`,
           },
           {
-            title: `Abouts`,
+            title: `About`,
             slug: `/about`,
           },
         ],
