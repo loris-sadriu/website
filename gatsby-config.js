@@ -8,8 +8,8 @@ module.exports = {
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.js
     siteTitle: `Loris Sadriu`,
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
-    siteHeadline: `Minimal Blog - Gatsby Theme from @lekoarts`,
+    siteTitleAlt: `Loris Sadriu`,
+    siteHeadline: `Loris Sadriu`,
     siteUrl: `https://minimal-blog.lekoarts.de`,
     siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
     siteLanguage: `en`,
@@ -17,25 +17,43 @@ module.exports = {
     author: `@lekoarts_de`,
   },
   plugins: [
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 590,
+              wrapperStyle: fluidResult => `flex:${_.round(fluidResult.aspectRatio, 2)};`,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
       options: {
         navigation: [
           {
+            title: `About`,
+            slug: `/about`,
+          },
+          {
             title: `Blog`,
             slug: `/blog`,
           },
           {
-            title: `Lolo`,
-            slug: `/loli`,
-          },
-          {
-            title: `About`,
-            slug: `/about`,
+            title: `Impressum`,
+            slug: `/Impressum`,
           },
         ],
-        externalLinks: [
+        /*externalLinks: [
           {
             name: `Twitter`,
             url: `https://twitter.com/lekoarts_de`,
@@ -44,7 +62,7 @@ module.exports = {
             name: `Homepage`,
             url: `https://www.lekoarts.de?utm_source=minimal-blog&utm_medium=Starter`,
           },
-        ],
+        ],*/
       },
     },
     {
