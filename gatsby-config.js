@@ -14,7 +14,7 @@ module.exports = {
     siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
+    author: `Loris Sadriu`,
   },
   plugins: [
     `gatsby-plugin-sharp`,
@@ -89,8 +89,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
+        name: `Loris Blog`,
+        short_name: `LB`,
         description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
         start_url: `/`,
         background_color: `#fff`,
