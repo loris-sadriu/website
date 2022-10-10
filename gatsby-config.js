@@ -10,10 +10,10 @@ module.exports = {
     siteTitle: `Loris Sadriu`,
     siteTitleAlt: `Loris Sadriu`,
     siteHeadline: `Loris Sadriu`,
-    siteUrl: `https://minimal-blog.lekoarts.de`,
-    siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
+    siteUrl: `https://lorissadriu.com`,
+    siteDescription: `Persönicher Blog von Loris Sadriu`,
     siteLanguage: `en`,
-    siteImage: `/banner.jpg`,
+    //siteImage: `/banner.jpg`,
     author: `Loris Sadriu`,
   },
   plugins: [
@@ -91,7 +91,7 @@ module.exports = {
       options: {
         name: `Loris Blog`,
         short_name: `LB`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        description: `Persönicher Blog von Loris Sadriu`,
         start_url: `/`,
         background_color: `#fff`,
         // This will impact how browsers show your PWA/website
